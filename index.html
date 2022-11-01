@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio3jsJosegutierrezFunciones</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Ejercicio 4 -->
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+
+
+
+    <script src="assets/js/1 funcion.js"></script>
+    <script src="assets/js/2 arrow.js"></script>
+
+    <script>
+        colorDiv1 = document.querySelector('#div1')
+        colorDiv2 = document.querySelector('#div2')
+        colorDiv3 = document.querySelector('#div3')
+        colorDiv4 = document.querySelector('#div4')
+
+        document.addEventListener('keydown', function cambioColor() {
+            if (event.key === 'a') {
+                colorDiv1.style.backgroundColor = "grey"
+                color = "grey"
+            } else if (event.key === 's') {
+                colorDiv1.style.backgroundColor = "white"
+                color = "white"
+            }
+            else if (event.key === 'd') {
+                colorDiv1.style.backgroundColor = "red"
+                color = "red"
+            }
+        })
+
+        colorDiv2.addEventListener("click", cambiodeColor = () => colorDiv2.style.backgroundColor = color  );
+        colorDiv3.addEventListener("click", cambiodeColor = () => colorDiv3.style.backgroundColor = color  );
+        colorDiv4.addEventListener("click", cambiodeColor = () => colorDiv4.style.backgroundColor = color  );
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
